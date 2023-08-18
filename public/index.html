@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  </head>
+  <body>
+    <header class="'m-2">
+      <div class="logo">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAABNVBMVEX///8AAAAGBgYEBAQNDQ0WFhYwMDCSkpISEhK7BAXMzMwYGBgKCgq8vLz09PQQEBB5eXnOAwO0BAbDBAXCBAWvBAaqBQbFxcWlBgfr6+v/AABLS0v6///VAwP1AAAdHR3cAABkZGSnp6fc3NzpAACSBAQ+Pj6Dg4NxcXHxAAC2trabAABcXFucnJzo5+fjq6pqAAB/BAUtLS2tra2BgYH15ub23Nrio5/jfHrlR0faMzThY2HmmZbzy8ngLCzqd3XWQULvoaDkjYvgsrHjHR7oz83EV1TXhoXRmJbWNzfkXVvdzczRgH7XeHfTHx7EPT7CVlW2X16lJyepGRi8hoPRqKfHk5SVJSWLExS7nJyJAACcYF5wEBGic3GOT05TAACuiIfWuLWHYF9zAABzODZyJieHV1bNJTvdAAAIQ0lEQVR4nO2ci1/ayBaAM5BIIGHCQ8XIALFEEMFXLdZabHelduvtY+8+3L3r9t7d7n38/3/CPWciAkmglXVrpr/ziYiByW8+z5lnEE0jCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIg7ho+euDmKpXK9uE23OfcyLOqw/NbvZbNRtit3lb+i5GD4O1UUctpNKyARsPBA70d9+OFkw/P9RrMNiyjYRmmZRh4Mw0LZVOs0cvdd/3+NLkeY6ZlGZaUgzsj+GnKYBqMbajtiH7SRIZOal07Gte24KhwHHnGYSMj0zIdIz3qaQyZsA0TQ2sxJ6Nop9OsMqlngk0jhV4bmQdIZgMix1KNUdJarNq878ouQoWxhtkIHBmrbjXdcaS429yqYgM1TAxlg7HKPdZ0QXaYLtuaacAwWMhF85DnCjAwyhhalsMe3EMd/wy8wBy0M02HLbVnvqy9hE3SxAGEFdRqjG0GFTctx7FZYXfO63YLEGoTc9Vis/8QCaQNTdAwHNNkrY81sPwSszCK0BgVUjxkDowOANvAX+enH9+AV5v4erb9WWp3B+xi5kELdNjOJ71+BxRxwNSZGvNUzpmNQXGsTx4CKraFjiZLq9HbbDEd/XR2+MlFMK1NaLds6y+s152xzcwgRW/TqmQhnBoo0BR3WylpeMueEcZPiLyRbiW/KT6AhHOg02jdskm1ZI/q3CK17wnOHCSVWqAgxl5nSe9sMrKb0ReYZmZQETqbnWRvT7kPbehkHNa6fVEOeQqOqYS3ROgTMUnZIsv2PDN1nAfl77xWd0kVm6HOeovkGe9hf+qw6p3X6g5pGjYI3m4oHHMoeynbSPKC/xCSVNdtNut5MfUjAkz3dMdI9ICB4zYk6YzBXsQ+nOCRDGKSV1GcmTYazphxi/7R4+MnJycXTwenR0JE22qF6ZABppHc0YJjDXW2FLuqF6fHzzqd+jpS73jP90Qkks2HcAIIYnIN88yxwXAjdBhEBD/1OuuB3eiHN+RCTCfsRmCY3PGiHcSwEDosuDh66l/b1euder0uPTtf9UOpuoUnSHJDxBDYdqQvFHzgB4Fb972nX+8Nh3uPB098kPRCqfpANsRIEiSHa8NwMxT9F3VsgPVnz/t8NGBwPnjSWffPptpik+lxaZ4celBBMAx3FEKcyfQ87mO7GweNn9fW/ceTithV2Q7rfZbaLgCvxhuClIeGZ5FRUJz5/nCiLXJmYwyrSe1M5xgOMIh+P6woxPCFJ8Q4qmhoJ9rQjjfU+i+wI30bCSIX5++Ox0d5cAIVDcUxDg8vzqNPCLc4PqqEYSo2S8U5jhf1s8gTEMXhy/EZkm+YAmInXeIb7Gv82Kq/Oro5A5xAWcMjH+cxg2h3ClNwdzSCKG2ofQUxXH/Wjz7DNe1LMNS0U5ym1QciMmJMzgFUNQwMnuDE9CKyZpqe0yhgmE7PiKEYyu50b+4ZWDptpxNtCPWbZajxC+hr6n+bewYGIUwl2tDG9x/OqJ/Yw5WhHx31J87A0knOUp5rsVRaGrrNZmRLEAb3E1j11o/jS0MJV2YpTBmqMW9OSQBujzEbDDFLW+AZXumD4qDT8ddPjuJKF6BEKzBM6Yz1kri1vwQZhiG0WaWNs7fwQhg60d2Lut/p7EUGDFz6Muhh2nmGJ8FEXeDCx1/OEg4VUMM0e5TBRVB041uIQcf3/VqM4bb8m2Qe3RgufZY63w40TEvDAhrG7piJWsfveK+1yKCYxyk3yxQgx9NqGOoxhoIL7Q3E0I8uE8eGTPY1STaE+s00hNt5EQzfRSenedwdUMBQhlAa2vqkIbqJ4MFb3/O96LzmxhBOgQ1RMUNYPQgeII6Kvud9G0lT9Qz1KUNx+urbouTNh+ee5xUj85pJw7Rqhlz0L4reiOK7Ws3zXoWDqLKhEG/KXu0GDx97J+FZmVKGwWhxcwXJfVmcEAwolsMztynDtFKG/G25VgwBit+ECitrCKND2QsLgmHt76HCqhoK7TQb8ZOshNJUVUONf1csluEruBtRLtayofFCEcP0hGHQl56XyjN4OV1Ykb40avhdeTnGbhm+VqeXUIoYpiKG3xezy1FQuzScKqyeYTAv7f+wnF3ORiSz5Ww2++NUYaXmpROGH1bLpWwUPLaspqFcH04YXsb5ZTGs0RhOroDVMRyuZktxwFEwnOxqJg0THsPRPo2ug+H5ZrxhaaVUmmeY3DW+3A++3omywZB/jzYrK6XRl5RbwbvVn6YKTxgmea/NTssgjg21n1fiWS1tnofGQ7mbGBjaiTVMyS1vaZiyMUu1yy7YrKyGWVtduZouPDZMJdoQr62N9kvljnD/H6W1tRjB1e4v04XBMAWGW7KfSWqWPrwxzIBhWsZQ+7ELPmsTXP/yc2hDcRtKQDtsY6bLt2M8vBeH+bTl3x/7muYhg+rim72FdtWdErzWvLoMFeZ4vYMdNrErlZc/kvgGTHcn+DQBM4///8IaeNlCaB8O1rrdKb1ut7v5a6T0tsNYBrJVD06i0meCXO53N8dcwXf34Fce3ddXFqFdvj/YvLo6kDfJ/j/57H9IUJLX//rt4ODqAEG/979HLz2pDWTkhz/29/f/Dezv/+d3jocSeRV7QYJovc7/8d/f3v/vl9c4SsRcISUIgrg7OMfblwN33d1mDj9qr5KPgodzueau6yrq7OYCN7CYQ+X6JfM+xCapND+uNyGZ5P+MnYPbbI7jFAs+3Wwq3zTxTRhuwC5y/RgP33fVCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgvkj+D+1y6miTT2OhAAAAAElFTkSuQmCC">
+      </div>
+  </header>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>
